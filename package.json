@@ -11,5 +11,6 @@
     "description": "fullscreen view with some buttons",
     "dependencies": {
         "@11ty/eleventy": "^3.0.0"
-    }
+    },
+    "type": "module"
 }

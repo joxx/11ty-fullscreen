@@ -1,7 +1,6 @@
 ---
 title: artist artist
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +12,8 @@ title: artist artist
     <!-- header -->
     {% include "partials/header.njk" %}
 
-    <main id="main" class="flow">{{ content | safe }}</main>
+    <main id="main" class="flow">
+      {{ content | safe }}
+    </main>
 </body>
 </html>
