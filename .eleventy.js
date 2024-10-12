@@ -1,11 +1,16 @@
-export default async function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets");
+module.exports = eleventyConfig => {
+  // 	--------------------- Custom Template Languages ---------------------
+  eleventyConfig.addPlugin(require('./config/template-languages/css-config.js'));
+
+  // 	--------------------- Custom Watch Targets -----------------------
+  eleventyConfig.addWatchTarget('./src/assets');
 
   return {
     dir: {
-      input: "src",
+      input: 'src',
+      output: 'dist'
     },
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk'
   };
-}
+};
