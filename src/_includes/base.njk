@@ -7,13 +7,13 @@ title: artist artist
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/assets/css/global/global.css"/>
+  <link rel="stylesheet" href="/assets/css/global.css"/>
 </head>
 <body>
     <!-- header -->
     {% include "partials/header.njk" %}
 
-    <main id="main" class="flow">
+    <main id="main" class="wrapper flow">
       {{ content | safe }}
     </main>
 </body>
